@@ -1,0 +1,164 @@
+#viewerDiv {
+  width: 75vw;
+  height: 70vh;
+  position: fixed;
+  top: 29vh;
+  left: 24vw;
+}
+/* #panoramaFile {
+  width: 10vw;
+  height: 10vh;
+  position: fixed;
+  top: 10vh;
+  left: 1vw;
+} */
+#markerView {
+  position: fixed;
+  top: 1vh;
+  left: 38vw;
+  width: 65vw;
+  height: 29vh;
+}
+#markerTextInput {
+  width: 30vw;
+  height: 26vh;
+  font-size: 20px;
+}
+#markerImageDiv {
+  position: absolute;
+  top: 0vh;
+  left: 31vw;
+}
+#markerImage {
+  position: absolute;
+  width: 30vw;
+  height: 27vh;
+}
+.dot {
+  background-color: white;
+  /* background-color: transparent; */
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  border: 5px solid green;
+}
+
+.button {
+  background-color: white;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: #0964b0;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.button:hover {
+  filter: brightness(95%);
+}
+
+#panoramaFile {
+  display: none;
+}
+#panoramaFileLabel {
+  position: fixed;
+  left: 5vw;
+  top: 1vh;
+  height: 11vh;
+  width: 10vw;
+  font-size: 2.5vh;
+  text-align: center;
+}
+#dummyframe {
+  display: none;
+}
+#markerImageInput {
+  position: fixed;
+  left: 25vw;
+}
+#markerImageInput::after {
+  content: "Select Image";
+}
+#markerImageInput::file-selector-button {
+  width: 7vw;
+}
+#gallery {
+  position: fixed;
+  top: 29vh;
+  left: 1vw;
+  height: 70vh;
+  width: 23vw;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+.galleryImage {
+  height: 30vh;
+  width: 22vw;
+}
+#eraseFile {
+  display: none;
+}
+#eraseFileLabel {
+  position: fixed;
+  left: 7vw;
+  top: 17vh;
+  height: 7vh;
+  width: 6vw;
+  font-size: 2vh;
+  text-align: center;
+  color: red;
+}
+#markerImageInput {
+  display: none;
+}
+#markerImageLabel {
+  position: fixed;
+  left: 24vw;
+  top: 1vh;
+  height: 2vh;
+  width: 10vw;
+  font-size: 1.5vh;
+}
+#submitMarker {
+  display: none;
+}
+#submitMarkerLabel {
+  position: fixed;
+  left: 24vw;
+  top: 15vh;
+  height: 2vh;
+  width: 10vw;
+  font-size: 1.5vh;
+}
+#eraseMarker {
+  display: none;
+}
+#eraseMarkerLabel {
+  position: fixed;
+  left: 24vw;
+  top: 22vh;
+  height: 2vh;
+  width: 10vw;
+  font-size: 1.5vh;
+  color: red;
+}
+#eraseMarkerImage {
+  display: none;
+}
+#eraseMarkerImageLabel {
+  position: fixed;
+  left: 24vw;
+  top: 8vh;
+  height: 2vh;
+  width: 10vw;
+  font-size: 1.5vh;
+  color: red;
+}

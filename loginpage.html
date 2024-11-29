@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="loginpagestyles.css" />
+  </head>
+  <body>
+    <form method="POST" action="loginregister.php" target="output">
+      <label for="user">Username:</label><br />
+      <input type="text" id="user" name="user" /><br />
+      <label for="pass">Password:</label><br />
+      <input type="password" id="pass" name="pass" /><br /><br />
+      <input type="submit" name="action" value="Login" />
+      <input type="submit" name="action" value="Register" />
+    </form>
+
+    <div id="outputDiv"></div>
+    <iframe name="output" id="output"> </iframe>
+
+    <script>
+      document.getElementById("output").addEventListener("load", function () {
+        const response =
+          document.getElementById("output").contentWindow.document.body
+            .innerHTML;
+        document.getElementById("outputDiv").innerHTML = response;
+        if (response == "Ok") {
+          document.getElementById("outputDiv").innerHTML = "";
+          window.location.replace("mainpage.php");
+        }
+      });
+    </script>
+  </body>
+</html>

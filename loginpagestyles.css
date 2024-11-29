@@ -1,0 +1,46 @@
+form {
+  height: 20vh;
+  width: 20vw;
+  position: fixed;
+  left: 40vw;
+  top: 25vh;
+  text-align: center;
+  font-size: 30px;
+}
+input {
+  height: 3vh;
+  width: 20vw;
+}
+input[type="submit"] {
+  height: 5vh;
+  background-color: white;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: #0964b0;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  font-size: 25px;
+}
+
+input[type="submit"]:hover {
+  filter: brightness(95%);
+}
+iframe {
+  display: none;
+}
+#outputDiv {
+  height: 20vh;
+  width: 20vw;
+  position: fixed;
+  left: 40vw;
+  top: 60vh;
+  border: none;
+  font-size: 25px;
+  color: rgb(0, 140, 255);
+  text-align: center;
+}
