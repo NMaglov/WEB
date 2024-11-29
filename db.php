@@ -7,8 +7,8 @@ class Db
     {
         $dbhost = "localhost";
         $dbName = "PanoramaViewerWithMarkersDB";
-        $userName = "root";
-        $userPassword = "password";
+        $userName = "";
+        $userPassword = "";
 
         $this->connection = new PDO(
             "mysql:host=$dbhost;dbname=$dbName",
